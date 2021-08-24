@@ -1,10 +1,13 @@
-import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
+// import horror from "../data/horror.json";
+import MyNav from "./components/MyNav";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello there</h1>
+      <MyNav />
+      <Footer />
     </div>
   );
 }
