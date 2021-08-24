@@ -1,23 +1,14 @@
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 
 const MyNav = () => (
-  <Navbar bg="light" expand="lg">
+  <Navbar bg="dark" variant="dark">
     <Container>
-      <Navbar.Brand href="#home">Bookstrive</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-          <Nav.Link href="#">Home</Nav.Link>
-          <Nav.Link href="#">About</Nav.Link>
-          <NavDropdown title="Browse" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#">Comedy</NavDropdown.Item>
-            <NavDropdown.Item href="#">Horror</NavDropdown.Item>
-            <NavDropdown.Item href="#">Other stuff</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#">And other</NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
-      </Navbar.Collapse>
+      <Navbar.Brand href="#home">Book Store</Navbar.Brand>
+      <Nav className="me-auto">
+        <Nav.Link href="#home">Home</Nav.Link>
+        <Nav.Link href="#features">About</Nav.Link>
+        <Nav.Link href="#pricing">Browse</Nav.Link>
+      </Nav>
     </Container>
   </Navbar>
 );
